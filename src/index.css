@@ -1,0 +1,388 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: lightgrey;
+}
+
+
+header{
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 40px 35px;
+  background: gray;
+  align-items: center;
+  padding-left: 25px;
+  padding-top: 5px;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+  grid-column: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  color: #ff8700;
+}
+
+.buttons{
+  grid-column: 3;
+}
+
+
+.button {
+  width: 200px;
+  height: 50px;
+  margin: 25px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid #ff8700;
+  grid-row: span 2;
+}
+
+.button:hover {
+  background-color: #ff8700;
+}
+
+.wrap {
+  padding: 2% 15%;
+}
+
+.vl {
+  grid-column: 2;
+  border-left: 2px solid #ff8700;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 120px;
+}
+
+.WorkersList {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.pojazdyList {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.buttonDodaj {
+  grid-column: 1;
+  width: auto;
+  height: 35px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid #002569;
+}
+
+.buttonDodaj:hover {
+  color: white;
+  background-color: #002569;
+}
+
+.pracownik{
+  display: grid;
+  grid-template-columns: 25% 40% 5% 30%;
+  grid-template-rows: 50px 50px 60px; 
+  background: darkgrey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.kierowca{
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 50px 50px 60px; 
+  background: darkgrey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.pojazd{
+  display: grid;
+  grid-template-columns: 25% 40% 5% 30%;
+  grid-template-rows: 50px 50px 60px; 
+  background: darkgrey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.vl1 {
+  grid-column: 3;
+  grid-row: span 3;
+  border-left: 2px solid #002569;
+  height: 95%;
+  
+}
+
+.buttonEdytuj {
+  grid-column: 4;
+  grid-row: 1;
+  width: 65%;
+  height: 35px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid #00b80f;
+}
+
+.buttonEdytuj:hover {
+  color: white;
+  background-color: #00b80f;
+}
+
+.buttonUsun {
+  grid-column: 4;
+  grid-row: 2;
+  width: 65%;
+  height: 35px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid #af0000;
+}
+
+.buttonUsun:hover {
+  color: white;
+  background-color: #af0000;
+}
+
+.buttonZarzadzaj {
+  grid-column: 4;
+  grid-row: 3;
+  width: auto;
+  height: 35px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: auto;
+  border: 2px solid #ff8700;
+}
+
+.buttonZarzadzaj:hover {
+  color: white;
+  background-color: #ff8700;
+}
+
+.name {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.email {
+  grid-row: 2;
+  grid-column: 2;
+  font-size: 16px;
+}
+
+.job {
+  grid-row: 3;
+  grid-column: 2;
+  font-size: 16px;
+}
+
+.image {
+  height: 100%;
+  width: 90%;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.ListHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+  .ListHeader pojazdy {
+      grid-column: 3;
+  }
+
+
+.textInput {
+  width:100%;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formAdd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: darkgrey;
+  padding: 10px;
+}
+
+.buttonNav {
+  width: 200px;
+  height: 50px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid #ff8700;
+  margin-left: 15px;
+}
+
+.buttonNav:hover {
+  background-color: #ff8700;
+}
+
+.inputRok{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manageWrap{
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+}
+
+.WorkerHistory{
+  grid-column: 1;
+}
+
+.CurrentWorker{
+  grid-column: 3;
+}
+
+.buttonSub {
+  width: 40%;
+  height: 50px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid #0077ff;
+}
+
+.buttonSub:hover {
+  background-color: #0077ff;
+}
+
+.buttonZak{
+  width: 100%;
+  height: 50px;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid #960000;
+}
+
+.buttonZak:hover {
+  color: white;
+  background-color: #960000;
+}
+
+
+.dInput {
+  width:55%;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.photo {
+  width: 150px;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.photoCon {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.urlInput {
+  width:100%;
+  height: 100px;
+  font-size: 15px;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
